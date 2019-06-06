@@ -1,10 +1,9 @@
 # CS591_MEAN/PS1
 
-<Problem Set 1>
-
 Problem 1 (PS1.P1.js)
 
 Write a function that takes a string as its input and returns a new string that contains all of the letters in the original string, but in alphabetical order. Ignore punctuation and numbers. Test your function using the string ‘supercalifragilisticexpialidocious’.
+
 
 Problem 2 (PS1.P2.js)
 
@@ -16,6 +15,7 @@ Write a function that takes as input each of the following strings in turn:
 This function should determine the operator (+, *, -, or /) embedded in the string.
 Return a function to implement the input operator that returns the result.
 You can assume that the format of the input string is fixed (i.e. a digit, an operator, and a digit, always the same length).
+
 
 Problem 3 (PS1.P3.js)
 
