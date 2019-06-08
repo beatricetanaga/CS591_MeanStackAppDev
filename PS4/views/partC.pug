@@ -1,0 +1,6 @@
+extends layout
+
+block content
+    each photo in data.photos.photo
+        h3 #{photo.title}
+        img( src= `https://farm${photo.farm}.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}.jpg` )
