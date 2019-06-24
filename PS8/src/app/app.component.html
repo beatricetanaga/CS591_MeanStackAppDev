@@ -1,0 +1,21 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to PS8 Flickr Search!
+  </h1>
+</div>
+
+<div align="center">
+  <input [(ngModel)]="flickrTag" type="text" placeholder="Flickr Tag Name">
+  <button (click)="get_images()"> submit </button>
+</div>
+<br>
+
+<div *ngIf="photos">
+  <div *ngFor="let photo of photos">
+    Caption: {{photo.title}}
+    <br>
+    <img src="https://farm{{photo.farm}}.staticflickr.com/{{photo.server}}/{{photo.id}}_{{photo.secret}}.jpg">
+    <br><br>
+  </div>
+</div>
