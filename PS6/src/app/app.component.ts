@@ -16,7 +16,7 @@ export class AppComponent {
 
   get_images(): any {
     if ( this.flickrTag.length < 1 ) return;
-    return this.httpClient.get('/api/ps4/' + this.flickrTag).subscribe((res) => {
+    return this.httpClient.get('/api/ps4/' + this.flickrTag).subscribe((res:any) => {
       console.log(res);
       this.photos = res.photos.photo;
       this.ref.detectChanges();
